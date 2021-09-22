@@ -1,0 +1,130 @@
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100px;
+}
+button {
+  background-color: rgb(152, 10, 235);
+  padding: 20px 40px;
+  border-radius: 30px;
+  color: rgb(236, 232, 232);
+  font-size: 1.2rem;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(249, 253, 251);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.wrapper {
+  min-width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* row style */
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+h1 {
+  color: rgb(117, 9, 240);
+  border-bottom: 3px solid rgb(111, 0, 255);
+  padding-bottom: 5px;
+  font-size: 3rem;
+  margin: 20px 0;
+  font-weight: bolder;
+  display: inline-block;
+}
+p {
+  font-size: 1.5rem;
+  color: rgb(98, 0, 255);
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-align: center;
+}
+.images {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  color: rgb(152, 10, 235);
+  flex-wrap: wrap;
+}
+.images img {
+  margin: 30px 0;
+}
+.images p {
+  color: rgb(152, 10, 235);
+  font-weight: light;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.images figure {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.flex {
+  display: flex;
+}
+.flex div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 30px;
+}
+.flex div img {
+  margin: 50px 0;
+}
+lottie-player {
+  width: 500px;
+  height: 350px;
+}
+
+/* responsive */
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  lottie-player {
+    width: 300px;
+  }
+}
