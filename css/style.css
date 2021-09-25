@@ -16,13 +16,6 @@ body {
 img {
   width: 100px;
 }
-button {
-  background-color: rgb(152, 10, 235);
-  padding: 20px 40px;
-  border-radius: 30px;
-  color: rgb(236, 232, 232);
-  font-size: 1.2rem;
-}
 
 .container {
   width: 100%;
@@ -41,7 +34,17 @@ button {
   align-items: center;
   justify-content: center;
 }
-
+.btn {
+  background-color: rgb(152, 10, 235);
+  padding: 20px 40px;
+  border-radius: 30px;
+  color: rgb(236, 232, 232);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color:rgb(183, 96, 233)
+}
 /* row style */
 
 .row {
@@ -69,7 +72,7 @@ p {
   text-align: center;
 }
 .images {
-  width: 100%;
+  min-width: 90%;
   display: flex;
   justify-content: space-evenly;
   color: rgb(152, 10, 235);
@@ -127,4 +130,35 @@ lottie-player {
   lottie-player {
     width: 300px;
   }
+}
+
+
+/* slider style */
+.responsive {
+  margin: 30px auto;
+  width: 60%;
+}
+
+/* The width of each slide */
+.slick-slide {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:30px 10px;
+}
+
+/* Color of the arrows */
+.slick-next::before, .slick-prev::before {
+  color: blue;
+}
+.slick-slide h2{
+  color: rgb(152, 10, 235);
+  margin: 10px
+}
+.slick-slide p{
+  font-size:1rem;
+  color: rgb(152, 10, 235);
+
 }
