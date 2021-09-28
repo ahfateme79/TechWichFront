@@ -1,0 +1,36 @@
+nav{
+    width: 100%;
+    padding: 5px 30px;
+    border-bottom: 1px solid rgb(184, 174, 174);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul{
+    display: flex;
+    align-items: center;
+}
+ul li{
+    margin:0 15px;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(184, 174, 174);
+    font-weight: 500;
+    font-size: 14px;
+}
+i{
+    margin: 0 10px;
+    color: rgb(184, 174, 174);
+    font-size: 20px;
+}
+nav img{
+    width: 30px;
+    border-radius: 3px;
+}
+.user-pro{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
