@@ -86,13 +86,6 @@
 {
     float: right;
 }
-.slick-slide img
-{
-    display: block;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-}
 .slick-slide.slick-loading img
 {
     display: none;

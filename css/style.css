@@ -16,7 +16,7 @@ img {
   width: 100px;
 }
 
-.container {
+.containers {
   width: 100%;
   min-height: 100vh;
   background-color: rgb(249, 253, 251);
@@ -35,7 +35,7 @@ img {
   justify-content: center;
 }
 
-.btn {
+.btn-purple {
   background-color: rgb(152, 10, 235);
   padding: 20px 40px;
   border-radius: 30px;
@@ -44,19 +44,24 @@ img {
   cursor: pointer;
 }
 
-.btn:hover {
+.btn-purple:hover {
   background-color: rgb(183, 96, 233)
 }
 
 /* row style */
 
-.row {
+.rows {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 30px 0;
+}
+
+ h2 {
+  margin: 20px auto;
+  font-size: 3rem;
 }
 
 h1 {
@@ -128,8 +133,13 @@ lottie-player {
 /* responsive */
 
 @media screen and (max-width: 400px) {
-  h1 {
+
+  .rows h1 {
     font-size: 2rem;
+  }
+
+   h2 {
+    font-size: 17px;
   }
 
   p {
@@ -165,6 +175,19 @@ lottie-player {
   padding: 30px 10px;
 }
 
+.course-slide .responsive .slick-prev {
+  left: 40%;
+}
+
+.course-slide .responsive .slick-next {
+  right: 40%;
+}
+
+.course-slide .responsive button {
+  top: 110%;
+}
+
+
 /* Color of the arrows */
 .slick-next::before,
 .slick-prev::before {
@@ -181,6 +204,159 @@ lottie-player {
   color: rgb(152, 10, 235);
 
 }
+
+.sliderow img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: block;
+
+}
+
+/* bootstrap card style  */
+
+.card img {
+  margin: 0;
+  height: 200px;
+}
+
+.card {
+  margin: 0 5px;
+  padding: 0;
+  box-shadow: 0px 0px 5px 0px rgb(207, 203, 203);
+  width: 300px;
+}
+
+.card h5 {
+  font-size: 1.1rem;
+}
+
+.lables {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+
+.price {
+  position: absolute;
+  background-color: rgb(224, 42, 224);
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 180px;
+}
+
+.lables span {
+  padding: 5px 8px;
+  background-color: green;
+  color: #fff;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.lables span:first-child {
+  background-color: orange;
+}
+
+.card i {
+  color: black;
+  font-size: 15px;
+}
+
+.card-body {
+  width: 100%;
+}
+
+.detail-course {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.detail-course i {
+  color: blue;
+}
+
+.card-body img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.Introduction div {
+  display: flex;
+  margin: 10px 0;
+}
+
+.Introduction p {
+  color: black;
+  font-weight: 400;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-footer .fa-star {
+  color: rgb(255, 208, 0);
+}
+
+.card-footer a {
+  color: rgb(168, 60, 231);
+}
+
+.card-footer .fa-long-arrow-right {
+  color: rgb(168, 60, 231);
+}
+
+.rows mark {
+  color: blue;
+  background-color: transparent;
+}
+/* responsive card */
+@media screen and (max-width:900px) {
+  .card {
+    width: 200px;
+  }
+
+  .card h5 {
+    font-size: .8rem;
+  }
+
+  .card p,
+  .card span,
+  .card a {
+    font-size: .7rem;
+  }
+
+  .card i {
+    font-size: 10px;
+  }
+
+  .price {
+    width: 30px;
+    height: 30px;
+  }
+  .course-slide .responsive .slick-prev {
+    left: 30%;
+  }
+  
+  .course-slide .responsive .slick-next {
+    right: 30%;
+  }
+  
+}
+
 
 
 
@@ -336,13 +512,16 @@ input:focus {
     width: 90%;
   }
 }
+
 @media only screen and (max-width:900px) {
+
   fieldset>div,
   fieldset>div input {
     width: 100%;
   }
 
 }
+
 @media only screen and (min-width:700px) and (max-width:1200px) {
 
   .culmn {
@@ -361,7 +540,8 @@ input:focus {
     flex-direction: column;
     align-items: flex-start;
   }
-  .experiencbtn{
+
+  .experiencbtn {
     margin: 20px 0;
   }
 }
