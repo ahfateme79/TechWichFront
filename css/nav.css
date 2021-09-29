@@ -1,36 +1,113 @@
-nav{
+nav {
     width: 100%;
-    padding: 5px 30px;
-    border-bottom: 1px solid rgb(184, 174, 174);
+    padding: 0 30px;
+    border-bottom: 1px solid rgb(221, 217, 217);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 70px;
 }
-ul{
+
+nav ul {
     display: flex;
     align-items: center;
 }
-ul li{
-    margin:0 15px;
+
+nav ul li {
+    margin: 0 15px;
 }
-ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: rgb(184, 174, 174);
     font-weight: 500;
     font-size: 14px;
 }
-i{
+
+nav ul li a:hover {
+    color: rgb(119, 119, 231);
+}
+nav ul li a:hover i{
+    color:rgb(119, 119, 231)
+}
+nav i {
     margin: 0 10px;
     color: rgb(184, 174, 174);
     font-size: 20px;
 }
-nav img{
+
+nav img {
     width: 30px;
     border-radius: 3px;
 }
-.user-pro{
+
+.user-pro {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+}
+nav input[type="checkbox"]{
+    display: none;
+}
+.menu{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    display: none;
+}
+.menu span{
+    background-image: url(../img/bars-solid.svg);
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width:700px){
+    .menu{
+        display: inline-block;
+        z-index: 5;
+    }
+    .menu-list{
+        position: absolute;
+        flex-direction: column;
+        left: -100%;
+        width: 0;
+        background-color: #fff;
+        justify-content: center;
+        /* align-items: center; */
+        min-height: 100vh;
+        top: 0;
+        /* display: none; */
+        transition: all .8s;
+    }
+    .menu-list li{
+        margin: 20px 0;
+    }
+    nav input[type="checkbox"]:checked ~ ul{
+        /* display: flex; */
+        width: 100%;
+        left: 0;
+    }
+    nav input[type="checkbox"]:checked ~ .menu span{
+        background-image: url(../img/times-solid.svg);
+    }
+    nav ul li{
+        margin:0 10px;
+    }
+    nav{
+        justify-content: flex-end;
+    }
+}
+@media screen and (max-width:800px){
+    .menu-list a{
+        font-size: 12px;
+    }
+    nav i{
+        font-size: 15px;
+    }
+
 }
