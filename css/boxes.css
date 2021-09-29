@@ -1,0 +1,39 @@
+.boxes{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box-wrapper{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box-wrapper .card{
+    margin: 10px 20px;
+    border-radius: 10px;
+    padding:20px 0;
+    text-align: center;
+}
+.box-wrapper .card img{
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    display: inline-block;
+    margin: 10px auto;
+}
+.box-wrapper a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+}
+.box-wrapper p{
+    font-size: .9rem;
+    color: rgb(104, 102, 99);
+}
+.box-wrapper i{
+    color: red;
+    font-size: .9rem;
+}
