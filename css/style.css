@@ -1,6 +1,6 @@
 @import "./nav.css";
 @import "./boxes.css";
-
+@import './hero.css';
 /* css reset */
 
 * {
