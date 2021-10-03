@@ -1,6 +1,7 @@
 @import "./nav.css";
 @import "./boxes.css";
 @import './hero.css';
+@import './detail-templete.css';
 /* css reset */
 
 * {

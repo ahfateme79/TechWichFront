@@ -1,0 +1,179 @@
+.parent{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.left-section{
+    min-width: 60%;
+
+}
+.left-section img{
+    width: 90%;
+    margin: 0;
+}
+.tab{
+    width: 90%;
+}
+.tab input{
+    display: none;
+}
+#tab1,#tab2,#tab3,#tab4{
+    display: none;
+}
+.lab{
+    width: 100%;
+    display: flex;
+    background-color: rgb(229, 235, 235);
+    height: 50px;
+    align-items: center;
+}
+.lab label{
+    font-size: 17px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    padding-bottom: 0;
+}
+.description h6{
+    font-size: 1.3rem;
+}
+.description p{
+    text-align: left;
+    line-height: 1.5;
+    font-size: 1.3rem;color: gray;
+    margin: 20px 0;
+    font-weight: normal;
+}
+#overveiw:checked ~ .description #tab1,#decription:checked ~ .description #tab2,#teachers:checked ~ .description #tab3,#lectures:checked ~ .description #tab4{
+    display: block;
+}
+#overveiw:checked ~ .lab #one,#decription:checked ~ .lab #tow,#teachers:checked ~ .lab #three,#lectures:checked ~ .lab #four{
+    background-color: purple;
+    color: white;
+}
+table{
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(229, 235, 235);
+    margin: 20px 0;
+    border-radius: 10px;
+    color: gray;
+}
+td{
+    width: 50%;
+    padding: 5px 0;
+}
+.right-section > div{
+    width: 100%;
+    border: 1px solid rgb(218, 211, 211);
+    padding: 20px;
+    border-radius: 5px;
+}
+.links-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+}
+.links-btn a{
+    width: 90%;
+    padding: 20px 0;
+    text-decoration: none;
+    margin: 5px 0;
+    text-align: center;
+    border-radius: 5px;
+    color: purple;
+    background-color: rgb(229, 235, 235);
+}
+.links-btn a:hover{
+    background-color: purple;
+    color: rgb(229, 235, 235);
+
+}
+.links-btn a:last-child{
+    background-color: purple;
+    color: rgb(229, 235, 235);
+}
+.links-btn a:last-child:hover{
+    color: purple;
+    background-color: rgb(229, 235, 235);
+
+}
+.on{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 100%;
+    text-decoration: none;
+}
+.parent i{
+    margin: 0 5px;
+}
+.video{
+    position: relative;
+}
+.comment > span{
+    display: block;
+    font-size: 1.5rem;
+    padding: 5px 0;
+    border-bottom: 1px solid rgb(197, 189, 189);
+    font-weight: bold;
+    color: rgb(128, 122, 122);
+}
+.user-coment{
+    display: flex;
+    align-items: center;
+}
+.user-coment p{
+    text-align: left;
+    font-size: 1rem;
+    color: rgb(37, 35, 35);
+    margin: 10px;
+    line-height: 1.2;
+}
+.user-coment img{
+    width: 60px;
+    height: 70px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+@media screen and (max-width:700px){
+    .parent{
+        flex-wrap: wrap;
+    }
+    .lab label{
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width:768px){
+    .lab label{
+        font-size: .6rem;
+    }
+    .description p{
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1200px){
+    .user-coment{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
