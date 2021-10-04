@@ -1,0 +1,137 @@
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background-color: rgb(47, 49, 82);
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer>div {
+    width: 70%;
+}
+
+footer svg {
+    width: 100px;
+    /* height: 30px; */
+}
+
+footer a,
+h6,
+span {
+    color: rgb(248, 245, 245);
+    text-decoration: none;
+}
+
+footer p {
+    text-align: left;
+    font-weight: normal;
+    color: rgb(187, 174, 174);
+    font-size: 1rem;
+    margin: 10px 0;
+    letter-spacing: 1px;
+}
+
+footer ul li {
+    margin: 10px 0;
+}
+
+footer h6 {
+    margin-bottom: 15px;
+    font-size: .9rem;
+}
+
+footer>div:first-child {
+    padding: 30px 0;
+    border-bottom: 1px solid rgb(187, 174, 174);
+    align-items: flex-start;
+}
+
+.download {
+    flex-direction: column;
+}
+
+.download div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.download svg {
+    width: 150px;
+    margin: 10px 0;
+}
+
+.footer_list {
+    width: 45%;
+}
+
+.footer_list i {
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: rgb(199, 7, 199);
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width:900px) {
+    footer>div {
+        width: 90%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .footer_list {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .media,
+    .download {
+        display: none;
+    }
+
+    .footer {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hide {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid rgb(187, 174, 174);
+        min-height: 200px;
+    }
+    footer p{
+        font-size: .7rem;
+        margin:0;
+        padding: 10px 0;
+    }
+    .hide div{margin: 15px 0;}
+    .hide a,i{
+        margin: 10px;
+        font-size: 20px;
+        color: #ffff;
+    }
+    footer > div:first-child{
+        justify-content: center;
+    }
+}

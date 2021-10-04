@@ -2,6 +2,7 @@
 @import "./boxes.css";
 @import './hero.css';
 @import './detail-templete.css';
+@import './footer.css';
 /* css reset */
 
 * {
