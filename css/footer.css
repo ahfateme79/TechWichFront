@@ -24,8 +24,8 @@ footer svg {
 }
 
 footer a,
-h6,
-span {
+footer h6,
+footer span {
     color: rgb(248, 245, 245);
     text-decoration: none;
 }

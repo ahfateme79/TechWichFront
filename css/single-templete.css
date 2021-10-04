@@ -1,0 +1,135 @@
+.single-parent{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    padding:30px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.single-parent > div{
+    width: 100%;
+    min-height: 400px;
+}
+.single-parent p{
+    text-align: left;
+    color: gray;
+    font-size: 1rem;
+    font-weight: normal;
+}
+.teacher-img{
+    height: 100%;
+}
+.single-parent img{
+    width: 350px;
+    min-height:400px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.introduce{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.introduce > div{
+    padding:20px;
+}
+.info{
+    margin: 20px 0;
+}
+.info h4{
+    font-size: 1.7rem;
+}
+.info p{
+    margin: 20px 0;
+}
+.flex-column , .flex-column ul{
+    display: flex;
+}
+.flex-column ul{
+    width: 70%;
+    justify-content: space-between;
+}
+.flex-column li{
+    display: flex;
+    align-items: center;
+}
+.flex-column li span{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.flex-column div{
+    margin: 0 5px;
+}
+.flex-column i{
+    margin: 20px;
+    font-size: 15px;
+    color: rgb(9, 131, 115);
+}
+.flex-column li i{
+    font-size: 35px;
+}
+.flex-column li:nth-child(2) i{
+    color: rgb(255, 123, 0);
+}
+.flex-column li:last-child i{
+    color: rgb(110, 110, 250);
+}
+.social-media{
+    padding: 30px 0;
+}
+.social-media div{
+    width: 30px;
+    height: 30px;border-radius: 3px;
+    border: 1px solid rgb(9, 131, 115);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.single-parent h5{
+    font-size: 1.7rem;
+}
+.about-course{
+    margin: 0 10px;
+}
+.about-course p{
+    margin: 20px 0;
+    line-height: 1.5;
+}
+.about-course li{
+    display: flex;
+    align-items: center;
+}
+.about-course i{
+    color: green;
+    margin: 0 5px;
+}
+@media screen and (max-width:600px){
+    .introduce{
+        flex-wrap: wrap;
+    }
+    .flex-column,.flex-column ul {
+       flex-wrap: wrap;
+    }
+   
+    .flex-column li{
+        margin: 20px 0;
+    }
+    .single-parent{
+        padding: 20px;
+    }
+    .single-parent p{
+        line-height: 1.5;
+    }
+    .single-parent h5{
+        font-size: 1rem;
+    }
+    .teacher-img{
+        width: 100%;
+        padding: 10px 0;
+        min-height: 200px;
+    }
+    .single-parent img{
+        width: 100%;
+        height: 100%;
+    }
+}
