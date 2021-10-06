@@ -1,0 +1,92 @@
+.timeline-parent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+    align-items: center;
+}
+.slider-timeline{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.slider-timeline > div{
+    padding: 20px;
+    min-width: 50%;
+}
+.timeline-sec{
+    display: flex;
+    flex-direction: column;
+}
+.topic{
+    margin: 20px 0;
+}
+.topic p{
+    text-align: left;
+    color: gray;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+.topic h3{
+    font-size: 1.5rem;
+}
+.timeline p{
+    text-align: left;
+    color: rgb(4, 16, 63);
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1.5;
+    margin: 0 20px;
+}
+.timeline{ 
+    position: relative;
+
+}
+.timeline::after{
+    content: "";
+    width: 5px;
+    height: 400px;
+    background-color: rgb(228, 228, 250);
+    display: inline-block;
+    position: absolute;
+    left: 50px;
+    top: 20px;
+}
+.timeline div{
+    display: flex;
+    width: 80%;
+    align-items: flex-start;
+    width: 90%;
+    height: 70px;
+    /* box-shadow: 0px 0px 5px gray; */
+    padding: 20px;
+    border-radius: 10px;
+}
+.timeline div:not(div:first-child){
+    /* margin: 30px 0; */
+
+}
+.timeline span {
+    width: 70px;
+    height: 27px;border-radius: 30px;background-color: rgb(231, 231, 241);
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    color: rgb(116, 116, 209);
+    position: relative;
+    z-index: 4;
+}
+.timeline div:hover span {
+    background-color: rgb(32, 214, 93);
+    color: #fff;
+}
+.timeline div:hover{
+    box-shadow: 0px 0px 10px 0px rgb(233, 235, 238);
+}
+@media screen and (max-width:768px){
+    .slider-timeline{flex-wrap: wrap;}
+
+}
