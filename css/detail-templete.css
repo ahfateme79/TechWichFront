@@ -19,7 +19,7 @@
 .tab input{
     display: none;
 }
-#tab1,#tab2,#tab3,#tab4{
+#tab-1,#tab-2,#tab-3,#tab-4{
     display: none;
 }
 .lab{
@@ -53,7 +53,7 @@
     margin: 20px 0;
     font-weight: normal;
 }
-#overveiw:checked ~ .description #tab1,#decription:checked ~ .description #tab2,#teachers:checked ~ .description #tab3,#lectures:checked ~ .description #tab4{
+#overveiw:checked ~ .description #tab-1,#decription:checked ~ .description #tab-2,#teachers:checked ~ .description #tab-3,#lectures:checked ~ .description #tab-4{
     display: block;
 }
 #overveiw:checked ~ .lab #one,#decription:checked ~ .lab #tow,#teachers:checked ~ .lab #three,#lectures:checked ~ .lab #four{

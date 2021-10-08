@@ -15,8 +15,8 @@
 <body>
     <div class="timeline-parent">
         <div class="slider-timeline">
-            <div>
-                <div>
+            <div class="slide-control">
+                <div class="svg">
                     <svg width="440px" height="467px" viewBox="0 0 440 467" version="1.1"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>Group 2</title>
@@ -95,8 +95,24 @@
                         </g>
                     </svg>
                 </div>
-                <div>
-
+                <div class="result">
+                    <div class="tab-result">
+                        <div id="tab1" class="code-result block">
+                            <img src="./img/browser1.png" alt="">
+                        </div>
+                        <div id="tab2" class="code-result">
+                            <img src="./img/browser2.webp" alt="">
+                        </div>
+                        <div id="tab3" class="code-result">
+                            <img src="./img/browser3.webp" alt="">
+                        </div>
+                        <div id="tab4" class="code-result">
+                            <img src="./img/browser4.webp" alt="">
+                        </div>
+                        <div id="tab5" class="code-result">
+                            <img src="./img/browser5.webp" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="timeline-sec">
@@ -105,28 +121,30 @@
                     <p>Within days, you'll be able to build exciting projects and share them with your friends</p>
                 </div>
                 <div class="timeline">
-                        <div><span>Day1</span>
-                            <p>Your Personal Homepage</p>
-                        </div>
-                        <div><span>Day2</span>
-                            <p>User Profile</p>
-                        </div>
-                        <div><span>Day3</span>
-                            <p>Landing Page</p>
-                        </div>
-                        <div><span>Day4</span>
-                            <p>Voting Feature</p>
-                        </div>
-                        <div><span>Day5</span>
-                            <p>Add to cart</p>
-                        </div>
-                        <h6>... and that's just the beginning!
-                            Learn to code anytime, from anywhere
-                            </h6>
+                    <div class="box-shadow tab-btn" data-tab-id='tab1'><span class="span">Day1</span>
+                        <p>Your Personal Homepage</p>
+                    </div>
+                    <div data-tab-id='tab2' class="tab-btn"><span class="span">Day2</span>
+                        <p>User Profile</p>
+                    </div>
+                    <div data-tab-id='tab3' class="tab-btn"><span class="span">Day3</span>
+                        <p>Landing Page</p>
+                    </div>
+                    <div data-tab-id='tab4' class="tab-btn"><span class="span">Day4</span>
+                        <p>Voting Feature</p>
+                    </div>
+                    <div data-tab-id='tab5' class="tab-btn"><span class="span">Day5</span>
+                        <p>Add to cart</p>
+                    </div>
+                    <h6>... and that's just the beginning!
+                    </h6>
                 </div>
             </div>
         </div>
     </div>
 </body>
+<script src="./jquery.min.js"></script>
+<script src="./timelne.js">
+</script>
 
 </html>
