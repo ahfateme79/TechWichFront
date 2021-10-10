@@ -5,6 +5,7 @@
 @import './footer.css';
 @import './single-templete.css';
 @import './timeline.css';
+@import './form.css';
 /* css reset */
 
 * {
@@ -72,8 +73,10 @@ img {
   margin: 20px auto;
   font-size: 3rem;
 }
-
-h1 {
+a{
+  text-decoration: none;
+}
+.wrapper h1 {
   color: rgb(117, 9, 240);
   border-bottom: 3px solid rgb(111, 0, 255);
   padding-bottom: 5px;
@@ -83,7 +86,7 @@ h1 {
   display: inline-block;
 }
 
-p {
+.wrapper p {
   font-size: 1.5rem;
   color: rgb(98, 0, 255);
   letter-spacing: 2px;
@@ -408,18 +411,18 @@ img {
   line-height: 1.5;
 }
 
-.form {
+.grid .form {
   display: flex;
   flex-direction: column;
   padding: 30px;
   min-width: 50%;
 }
 
-form {
+.grid .form form {
   width: 100%;
 }
 
-.form form fieldset:nth-child(2) {
+.grid .form form fieldset:nth-child(2) {
   flex-direction: column;
 }
 
@@ -444,7 +447,7 @@ label {
   font-size: 13px;
 }
 
-input {
+.grid input {
   border: 2px solid rgb(201, 196, 196);
   padding: 10px 15px;
   display: block;
