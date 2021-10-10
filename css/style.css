@@ -154,6 +154,9 @@ lottie-player {
   p {
     font-size: 1rem;
   }
+  .sliderow h1{
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -221,7 +224,10 @@ lottie-player {
   display: block;
 
 }
-
+.sliderow h3{
+  color: rgb(152, 10, 235);
+  text-align: center;
+}
 /* bootstrap card style  */
 
 .card img {
