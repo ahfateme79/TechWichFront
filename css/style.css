@@ -6,6 +6,9 @@
 @import './single-templete.css';
 @import './timeline.css';
 @import './form.css';
+@import './pick-type.css';
+
+
 /* css reset */
 
 * {

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+
+<body>
+  <div class="dragable-setion">
+    <div>
+      <h4>write this in English</h4>
+      <div class="drop-sec">
+        <div>
+          <img src="./img/man.png" alt="man" />
+          <div class="speaker">
+            <i class="fas fa-volume-up"></i>
+            <p spellcheck="true">Hallo!</p>
+          </div>
+        </div>
+        <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      </div>
+      <div ondrop="drop(event)" ondragover="allowDrop(event)" class="items-word">
+        <span id="word1" draggable="true" ondragstart="drag(event)">coffee&nbsp;</span>
+        <span id="word2" draggable="true" ondragstart="drag(event)">please&nbsp;</span>
+        <span id="word3" draggable="true" ondragstart="drag(event)">Hello&nbsp;</span>
+        <span id="word4" draggable="true" ondragstart="drag(event)">and&nbsp;</span>
+        <span id="word5" draggable="true" ondragstart="drag(event)">milk&nbsp;</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="./drag.js">
+  </script>
+</body>
+
+</html>
